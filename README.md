@@ -1,5 +1,5 @@
-# GRAD GPS Tracker (WIP)
-This will provide a GPS Tracker dialog with a basic API.
+# GRAD GPS Tracker
+GPS Tracker dialog with a basic API.
 
 ## Dependencies
 * [CBA_A3](https://github.com/CBATeam/CBA_A3)
@@ -32,7 +32,7 @@ class CfgFunctions {
 
 ## Pictures
 
-![](http://i.imgur.com/aWKas0x.png)
+![](http://i.imgur.com/aWKas0x.png)  ![](http://i.imgur.com/Rn2xKBa.png)
 
 ## Usage
 
@@ -53,7 +53,7 @@ Example:
 `[_vehicle2,0.1,1,1.2,1,{_target getVariable ['signalStrength',0]}] call grad_gpsTracker_fnc_openTitle;`
 
 ### Target
-The target can be manually changed (even while the tracker is open) with `grad_gpsTracker_fnc_setTarget`.
+The target can be manually changed (even while the tracker is open) with `grad_gpsTracker_fnc_setTarget`. If you pass a null object, "NO SIGNAL" will be displayed.
 
 `[target,global] call grad_gpsTracker_fnc_setTarget`
 

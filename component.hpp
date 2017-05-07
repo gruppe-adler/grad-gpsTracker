@@ -9,4 +9,3 @@
 #define PIC(var1)   #(MODULES_DIRECTORY\grad-gpsTracker\data\var1)
 
 #include "\x\cba\addons\main\script_macros_mission.hpp"
-#include "defines.hpp"
