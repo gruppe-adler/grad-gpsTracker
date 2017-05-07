@@ -1,6 +1,8 @@
 # GRAD GPS Tracker
 GPS Tracker dialog with a basic API.
 
+![](http://i.imgur.com/aWKas0x.png)  ![](http://i.imgur.com/Rn2xKBa.png)
+
 ## Dependencies
 * [CBA_A3](https://github.com/CBATeam/CBA_A3)
 
@@ -30,15 +32,12 @@ class CfgFunctions {
 };
 ```
 
-## Pictures
-
-![](http://i.imgur.com/aWKas0x.png)  ![](http://i.imgur.com/Rn2xKBa.png)
 
 ## Usage
 
-There are two functions to open the tracker. `grad_gpsTracker_fnc_openTitle` creates a `cutRsc` (this is the function that you want). `grad_gpsTracker_fnc_openDialog` creates and returns a dialog - I don't know why you would want this, but hey it's here. Their parameters are the same.
+There are two functions to open the tracker. `grad_gpsTracker_fnc_openTitle` creates a `cutRsc` (this is the function that you want). `grad_gpsTracker_fnc_openDialog` creates and returns a dialog - I don't know why you would want this, but hey it's here. To close the title, use `grad_gpsTracker_fnc_closeTitle`. To close the dialog, use the escape button. Most of their parameters are the same.
 
-`[target,update interval,size,offset X,offset Y,reception code] call grad_gpsTracker_fnc_openTitle`
+`[target,update interval,size,offset X,offset Y,reception code,duration] call grad_gpsTracker_fnc_openTitle`
 
 Parameter       | Explanation
 ----------------|--------------------------------------------------------------------------------------------------------------------
@@ -48,6 +47,7 @@ size            | number (optional) - Size factor for title. Default: 1
 offset X        | number (optional) - Horizontal offset factor for title. Default: 1
 offset Y        | number (optional) - Vertical offset factor for title. Default: 1
 reception code  | code (optional) - Code that returns the reception value. See below.
+duration        | number (optional) - ONLY `_fnc_openTitle`! Time in seconds after which tracker will automatically be closed. -1 to disable. Default: -1
 
 Example:  
 `[_vehicle2,0.1,1,1.2,1,{_target getVariable ['signalStrength',0]}] call grad_gpsTracker_fnc_openTitle;`
