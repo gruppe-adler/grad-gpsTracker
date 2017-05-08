@@ -1,6 +1,6 @@
 {
     "name": "grad-gpstracker",
     "description": "GPS Tracker dialog with a basic API.",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "author": "McDiod"
 }
