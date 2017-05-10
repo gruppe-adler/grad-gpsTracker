@@ -16,7 +16,7 @@ _backgroundNight ctrlSetPosition [0,0,_totalW,_totalH];
 _backgroundNight ctrlCommit 0;
 
 private _backgroundDay = _display ctrlCreate ["RscPicture",-1,_ctrlGroup];
-_backgroundDay ctrlSetTextColor [1,1,1,1];
+[_backgroundDay] call grad_gpsTracker_fnc_updateBackground;
 _backgroundDay ctrlSetText (grad_gpsTracker_moduleRoot + "\data\tracker_bg_day.paa");
 _backgroundDay ctrlSetPosition [0,0,_totalW,_totalH];
 _backgroundDay ctrlCommit 0;

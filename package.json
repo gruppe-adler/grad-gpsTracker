@@ -1,7 +1,7 @@
 {
     "name": "grad-gpstracker",
     "description": "GPS Tracker dialog with a basic API.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "contributors": [
         {
             "name": "nomisum"
