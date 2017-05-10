@@ -1,6 +1,13 @@
 {
     "name": "grad-gpstracker",
     "description": "GPS Tracker dialog with a basic API.",
-    "version": "0.0.4",
-    "author": "McDiod"
+    "version": "0.1.0",
+    "contributors": [
+        {
+            "name": "nomisum"
+        },
+        {
+            "name": "McDiod"
+        }
+    ]
 }
